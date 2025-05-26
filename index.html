@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Profil Gx Dikzz</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
+
+  body {
+    margin: 0; padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .profile-pic {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    object-fit: cover;
+    box-shadow: 0 0 20px rgba(255,255,255,0.3);
+    margin-bottom: 20px;
+  }
+
+  .typing-name {
+    font-size: 3rem;
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 4px solid white;
+    width: 0;
+    animation:
+      typing 3.5s steps(8) forwards,
+      blinkCaret 0.75s step-end infinite;
+    user-select: none;
+    margin-bottom: 15px;
+    background: linear-gradient(90deg, 
+      #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #8b00ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+  }
+  @keyframes typing {
+    to { width: 8ch; }
+  }
+  @keyframes blinkCaret {
+    50% { border-color: transparent; }
+  }
+
+  button {
+    background-color: #128C7E;
+    color: white;
+    border: none;
+    padding: 12px 35px;
+    font-size: 1.1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    transition: background-color 0.3s ease;
+    user-select: none;
+    margin: 10px 5px;
+  }
+  button:hover {
+    background-color: #075E54;
+  }
+
+  .whatsapp-chat {
+    margin-top: 30px;
+    font-size: 1.2rem;
+    font-style: italic;
+    text-align: center;
+    animation: typingChat 6s steps(30) forwards;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid white;
+    width: 0;
+    margin-bottom: 25px;
+  }
+  @keyframes typingChat {
+    to { width: 30ch; }
+  }
+
+  .social-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .social-buttons button {
+    min-width: 120px;
+  }
+
+</style>
+</head>
+<body>
+
+  <img src="https://i.pravatar.cc/160" alt="Foto Profil Gx Dikzz" class="profile-pic" />
+  <div class="typing-name">Gx Dikzz</div>
+
+  <div class="whatsapp-chat">Halo! Yuk gabung WhatsApp grup kita, seru banget cuy!</div>
+  <button onclick="alert('Tombol Gabung Grup WhatsApp diklik!')">Gabung Grup WhatsApp</button>
+
+  <div class="social-buttons">
+    <button onclick="window.open('https://instagram.com/gxdikzz','_blank')">Instagram</button>
+    <button onclick="window.open('https://youtube.com/gxdikzz','_blank')">YouTube</button>
+    <button onclick="window.open('https://wa.me/6281234567890','_blank')">WhatsApp</button>
+  </div>
+
+  <button onclick="location.href='gallery.html'">Lihat Foto & Kata-Kata</button>
+
+  <audio autoplay loop>
+    <source src="https://www.bensound.com/bensound-music/bensound-sunny.mp3" type="audio/mpeg">
+  </audio>
+
+</body>
+</html>
