@@ -3,54 +3,55 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Profil Gx Dikzz</title>
+<title>Gallery Gx Dikzz</title>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
 
   body {
     margin: 0; padding: 20px;
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
     color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     min-height: 100vh;
   }
 
-  .profile-pic {
-    width: 160px;
-    height: 160px;
-    border-radius: 50%;
-    border: 4px solid #fff;
-    object-fit: cover;
-    box-shadow: 0 0 20px rgba(255,255,255,0.3);
-    margin-bottom: 20px;
+  h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 600;
   }
 
-  .typing-name {
-    font-size: 3rem;
-    font-weight: 600;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 4px solid white;
-    width: 0;
-    animation:
-      typing 3.5s steps(8) forwards,
-      blinkCaret 0.75s step-end infinite;
-    user-select: none;
-    margin-bottom: 15px;
-    background: linear-gradient(90deg, 
-      #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #8b00ff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    gap: 25px;
+    color: white;
+  }
+
+  .card {
+    background: rgba(0,0,0,0.4);
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 0 15px rgba(255,255,255,0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
   }
-  @keyframes typing {
-    to { width: 8ch; }
+
+  .card img {
+    max-width: 100%;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    box-shadow: 0 0 10px rgba(255,255,255,0.3);
   }
-  @keyframes blinkCaret {
-    50% { border-color: transparent; }
+
+  .card p {
+    font-size: 1rem;
+    line-height: 1.4;
+    margin: 0;
   }
 
   button {
@@ -64,56 +65,42 @@
     box-shadow: 0 4px 8px rgba(0,0,0,0.3);
     transition: background-color 0.3s ease;
     user-select: none;
-    margin: 10px 5px;
+    margin: 30px auto 0;
+    display: block;
   }
   button:hover {
     background-color: #075E54;
   }
-
-  .whatsapp-chat {
-    margin-top: 30px;
-    font-size: 1.2rem;
-    font-style: italic;
-    text-align: center;
-    animation: typingChat 6s steps(30) forwards;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 3px solid white;
-    width: 0;
-    margin-bottom: 25px;
-  }
-  @keyframes typingChat {
-    to { width: 30ch; }
-  }
-
-  .social-buttons {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-
-  .social-buttons button {
-    min-width: 120px;
-  }
-
 </style>
 </head>
 <body>
 
-  <img src="https://i.pravatar.cc/160" alt="Foto Profil Gx Dikzz" class="profile-pic" />
-  <div class="typing-name">Gx Dikzz</div>
+  <h1>Gallery Foto & Kata-Kata Gx Dikzz</h1>
 
-  <div class="whatsapp-chat">Halo! Yuk gabung WhatsApp grup kita, seru banget cuy!</div>
-  <button onclick="alert('Tombol Gabung Grup WhatsApp diklik!')">Gabung Grup WhatsApp</button>
-
-  <div class="social-buttons">
-    <button onclick="window.open('https://instagram.com/gxdikzz','_blank')">Instagram</button>
-    <button onclick="window.open('https://youtube.com/gxdikzz','_blank')">YouTube</button>
-    <button onclick="window.open('https://wa.me/6281234567890','_blank')">WhatsApp</button>
+  <div class="container">
+    <div class="card">
+      <img src="https://i.pravatar.cc/300?img=1" alt="Foto 1" />
+      <p>"Senyum kecil, tapi bikin dunia cerah!"</p>
+    </div>
+    <div class="card">
+      <img src="https://i.pravatar.cc/300?img=2" alt="Foto 2" />
+      <p>"Hidup cuma sekali, jadi jangan takut buat coba hal baru."</p>
+    </div>
+    <div class="card">
+      <img src="https://i.pravatar.cc/300?img=3" alt="Foto 3" />
+      <p>"Kocak itu bonus, serius itu modal!"</p>
+    </div>
+    <div class="card">
+      <img src="https://i.pravatar.cc/300?img=4" alt="Foto 4" />
+      <p>"Biar kata omongan miring, tetap maju dan jadi keren."</p>
+    </div>
+    <div class="card">
+      <img src="https://i.pravatar.cc/300?img=5" alt="Foto 5" />
+      <p>"Gagal bukan akhir, tapi bahan buat ngakak."</p>
+    </div>
   </div>
 
-  <button onclick="location.href='gallery.html'">Lihat Foto & Kata-Kata</button>
+  <button onclick="location.href='profil.html'">Kembali ke Profil</button>
 
   <audio autoplay loop>
     <source src="https://www.bensound.com/bensound-music/bensound-sunny.mp3" type="audio/mpeg">
